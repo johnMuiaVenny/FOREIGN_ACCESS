@@ -20,7 +20,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('SocialAccounts.urls')),
+    path('AUTHENTICATIONaPP', include('AUTHENTICATIONaPP.urls')),
+    path('', include('RESETpASS.urls')),
+    #path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 if settings.DEBUG:

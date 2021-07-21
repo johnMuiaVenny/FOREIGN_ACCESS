@@ -1,0 +1,11 @@
+<h1>Change Password.</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+
+    <input type="text" placeholder="USER NAME" name="username" required/><br>
+    <input type="password" placeholder="NEW PASSWORD" name="password1" required/><br>
+    <input type="password" placeholder="NEW PASSWORD" name="password2" required/><br>---
+    <input type="submit"/>
+    
+</form>
