@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'AUTHENTICATIONaPP.apps.AuthenticationappConfig',
-    'RESETpASS.apps.ResetpassConfig',
+    'MODELfORMS.apps.ModelformsConfig',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +78,7 @@ WSGI_APPLICATION = 'PROJECT1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'COMMENT',
+        'NAME': 'MANY',
         'PASSWORD': '1234',
         'PORT': '5432',
         'USER': 'postgres',
