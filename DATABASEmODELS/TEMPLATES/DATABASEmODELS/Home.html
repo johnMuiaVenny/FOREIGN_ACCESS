@@ -1,0 +1,10 @@
+<h1>HOME PAGE</h1>
+
+{% for singer in singer %}
+
+<h3><li style="list-style-type: none;">{{forloop.counter}}. <a href="{% url 'DATABASEmODELS:Song' singer.id %}">{{singer.S_Name}}</a></li></h3>
+
+{% endfor %}
+
+
+

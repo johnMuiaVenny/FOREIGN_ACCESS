@@ -1,0 +1,22 @@
+<br>
+
+<h3>{{Singer.S_Name}}</h3>
+
+
+{{error}}
+
+<form action="{% url 'DATABASEmODELS:Selected' %}" method="POST">
+    {% csrf_token %}
+
+{% for song in song %}
+
+<br>
+
+<input type="radio" name="song_id" value="{{song.id}}" id="{{forloop.counter}}"/>
+<label for="{{forloop.counter}}">Select {{song.Title}}</label>
+
+{% endfor %}<br><br>
+
+<input type="submit" value="Throw"/>
+
+</form>
